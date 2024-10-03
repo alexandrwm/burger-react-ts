@@ -1,21 +1,26 @@
 import React from 'react';
+import logo from './logo.svg';
 import './App.css';
-import BurgerCraftPage from './pages/BurgerCraftPage';
-import Acasa from './pages/Acasa';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Meniu from './pages/Meniu';
 
-
-
-const App = () => {
-return (
-  <div className='w-screen h-screen overflow-hidden'>
-    <BrowserRouter>
-      <Routes>
-        <Route index element ={<Acasa/>}/>
-      </Routes>
-    </BrowserRouter>
-</div>
-)
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
+
 export default App;

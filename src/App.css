@@ -1,90 +1,38 @@
-body{
-    background-image:url("https://burgercraft.md/img/cover/2019-05-09/cover.jpg");
-   
-    height:100%;
-    font-family: Avenir-Regular, sans-serif;
-    font-size: 14px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-}
-.navbar{
-    z-index:1000;
-    display:flex; 
-    padding:30px;
-    
-
-}
-.logo{
-   
-    z-index: 1;
-    cursor: pointer;
-    height: 110px;
-    width:110px;
-    padding-left: 10px;
-
+.App {
+  text-align: center;
 }
 
-.topPart .phone{
-    background: url(https://burgercraft.md/img/home/ico-phone.svg) no-repeat left center;
-    font-size: 14px;
-    color: #fff;
-    vertical-align: middle;
-    line-height: 24px;
-    display: inline-block;
-    margin: 0 5px 0 5px;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.topPart .phone span{
-    margin-left: 28px;
-    display: inline-block;
-    vertical-align: middle;
-}
-.topPart .mail{
-    background: url(https://burgercraft.md/img/home/ico-email.svg) no-repeat left center;
-    background-size: auto 23px;
-    font-size: 14px;
-    color: #fff;
-    vertical-align: middle;
-    line-height: 24px;
-    display: inline-block;
-    margin: 0 5px 0 5px;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.topPart .mail span{
-    margin-left: 28px;
-    display: inline-block;
-    vertical-align: middle;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.topPart .livrare {
-    background: url(https://burgercraft.md/img/home/information.svg) no-repeat left center;
-    background-size: auto 23px;
-    font-size: 14px;
-    color: #fff;
-    display: inline-block;
-    line-height: 24px;
-    margin: 0 5px 0 5px;
-}
-.topPart .livrare span{
-    margin-left: 28px;
-    display: inline-block;
-    vertical-align: middle;
-}
-.topPart .cart {
-    background: url(https://burgercraft.md/img/home/cart.svg) no-repeat left center;
-    width: 24px;
-    height: 18px;
-    background-size: auto 24px;
-    position: relative;
-    float: right;
-    
-    
+.App-link {
+  color: #61dafb;
 }
 
-.lang span{
-    padding-right:5px;
-    padding-left:5px;
-    
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
