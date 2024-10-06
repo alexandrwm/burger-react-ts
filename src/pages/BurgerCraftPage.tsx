@@ -1,10 +1,13 @@
 import React from 'react';
-import BurgerSelection from '../components/BurgerSelection';
+import Navbar from "../components/Navbar";
 
 const BurgerCraftPage = () => {
 return(
-<div className='container'>
-  <div className="burger-image burger-top" >
+  <div className='bg-the-end bg-dots h-screen' >
+    <Navbar/>
+<div className='container-right'>
+  <div className='images pt-9'>
+  <div className="burger-image burger-top " >
     <span className="img-description">CHIFLA BRIOCHE</span>
     <img src="	https://burgercraft.md/img/settings-store/2017-10-04/asset-1.svg" alt="chifla-top"/>
   </div>
@@ -15,9 +18,11 @@ return(
   </div>
                 
   <div className="burger-image burger-bottom">
-    <span className="img-description">CHIFLA BRIOCHEgg</span>
+    <span className="img-description">CHIFLA BRIOCHE</span>
     <img src="https://burgercraft.md/img/settings-store/2017-10-04/asset-23.svg" alt="chifla-bottom"/>
   </div>
+  </div>
+</div>
 </div>
 )
 }

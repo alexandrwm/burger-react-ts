@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.css';
 import BurgerCraftPage from './pages/BurgerCraftPage';
 import Acasa from './pages/Acasa';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Meniu from './pages/Meniu';
+import NotFoundPage from './pages/NotFoundPage';
 
 
 
@@ -12,7 +12,11 @@ return (
   <div className='w-screen h-screen overflow-hidden'>
     <BrowserRouter>
       <Routes>
-        <Route index element ={<Acasa/>}/>
+        <Route path="/" element ={<Acasa/>}/>
+        <Route path="/burger-craft" element={<BurgerCraftPage />} />
+        <Route path='/meniu' element={<Meniu/>} />
+
+        <Route path='*' element={<NotFoundPage/>} />
       </Routes>
     </BrowserRouter>
 </div>
