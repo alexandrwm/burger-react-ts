@@ -1,6 +1,18 @@
+import Navbar from "../components/Navbar";
+
+
 const Meniu = () => {
     return(
-<h1>Ajsj</h1>
+        <div className='bg-the-end bg-dots h-screen'>
+        <Navbar/>
+            <div>
+                <span>
+                    Aici va fi meniul
+                </span>
+
+    
+            </div>
+        </div>
     )
 }
 export default Meniu;

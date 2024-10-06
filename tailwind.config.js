@@ -4,7 +4,20 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    colors: {
+      'the-end' :'#2b2a2b',
+      'white' :'#FDFEFE',
+      'orange' :'#FFA500',
+      
+
+    },
+    extend: {
+      backgroundImage: {
+       'dots': "url('./assets/images/bg-texture.png')",
+      
+       'arrow-left': "url('./src/assets/images/arrow-left.svg')",
+      },
+    },
   },
   plugins: [],
 }
