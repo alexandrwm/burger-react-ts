@@ -9,7 +9,8 @@ import NotFoundPage from './pages/NotFoundPage';
 
 const App = () => {
 return (
-  <div className='w-screen h-screen overflow-hidden'>
+  <div className='page min-w-screen min-h-screen  object-cover flex flex-col overflow-hidden'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <BrowserRouter>
       <Routes>
         <Route path="/" element ={<Acasa/>}/>
